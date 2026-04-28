@@ -15,7 +15,7 @@ import Smooth_and_Interpolate as SI
 import Exp_CP_data_fitting as Exp_fit
 import math
 
-def FFT_EIS(time, Volt, Current, method, dt, window, max_f, directory, padding_factor=50, n_log_points = 100):
+def FFT_EIS(time, Volt, Current, method, dt, window, max_f, directory, padding_factor=1, n_log_points = 100):
 
     ### Differentiate Currenet and Voltage Data ###
     dif_V = np.gradient(Volt, time)
